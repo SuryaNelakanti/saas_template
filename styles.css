@@ -1,0 +1,212 @@
+    :root{
+        --secondup: #ff8811;
+        --firstup: #FFF8F0;
+        --centercolor: rgba(39, 41, 50,0.1);
+        --firstdown: #9dd9d2;
+        --seconddown: #392f5a;
+        --hfont: 'Jost', serif;
+        --pfont:  'Poppins', sans-serif;
+    }
+
+    body,html{
+        margin: 0;
+        padding: 0;
+        background-color: var(--firstup);
+        font-family: var(--pfont);
+    }
+    h1,h2,h3{
+        font-family: var(--hfont);
+    }
+    a{
+    	color: white;
+    	text-decoration: none;
+    }
+    #navBar{
+        background: var(--firstup);
+    }
+    nav{
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 50px;
+        justify-content: space-around;
+        top: 0;
+        position: sticky;
+        font-family: var(--hfont);
+    }
+    nav ul{
+        list-style-type: none;
+        display: inline-flex;
+        justify-content: space-around;
+        gap: 10px;
+    }
+    nav a{
+        color: var(--seconddown);
+        text-decoration: none;
+        font-size: 18px;
+    }
+    button{
+        font-size: 18px;
+        color: var(--firstup);
+        border-radius: 0px;
+        background-color: var(--secondup);
+        border: 2px solid var(--secondup);
+        width: 80px;
+        margin-left: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover{
+        background: transparent;
+        color:var(--secondup);
+        border: 2px solid var(--secondup);
+        transition: 0.3s ease-in-out;
+    }
+    #navbutton{
+        padding: 10px;
+        position: relative;
+        top: -10px;
+    }
+    #buttonSize{
+        width: 180px;
+        padding: 9px;
+        margin-top: 30px;
+    }
+    .logo{
+        align-self: center;
+    }
+    .heroMain{
+        padding: 60px;
+        color: var(--seconddown);
+        background-color: var(--firstup);
+        text-align: center;
+        background-size: cover;
+    }
+ /* From here is where the animated hover starts*/
+    .hover-underline-animation {
+        display: inline-block;
+        position: relative;
+    }
+    .hover-underline-animation:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: var(--secondup);
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    .hover-underline-animation:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+  /* animated hover ends above here*/
+    .headerText{
+        margin-top: 80px;
+    }
+    .rotationalText{
+        color: var(--secondup);
+    }
+
+    .headerText h1{
+        font-size: 40px;
+    }
+    .headerText p{
+        font-weight: 200;
+    }
+    .companycontainer{
+        background: var(--centercolor);
+    }
+   .companycontainer h2{
+    text-align: center;
+    font-weight: 200;
+    font-size: 14px;
+    color: rgba(0, 0, 1, 0.4);
+    margin-top: 20px;
+   }
+   .company-bar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   }
+   .content-container-1{
+    width: 100%;
+    min-height: 560px;
+    flex-wrap: wrap;
+   }
+   .content-container-2{
+    width: 100%;
+    min-height: 560px;
+    background: var(--centercolor);
+    }
+    .content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 150px;
+        text-align: justify;
+    }
+   .content-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 150px;
+    text-align: justify;
+   }
+   .text-content{
+       min-width: 300px;
+       margin-bottom: 100px;
+       margin-top: 100px;
+       color: var(--seconddown);
+    }
+    .text-content h1{
+       text-decoration: 2px underline var(--secondup);
+
+   }
+   .text-content ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        list-style-image: url("./images/ok-16.gif");
+        list-style-position: inside;
+        line-height: 70px;
+    }
+   .image-content{
+       margin-bottom: 100px;
+       margin-top: 100px;
+    }
+    .footer{
+        background-color: var(--seconddown);
+        display: flex;
+        flex-flow: row wrap;
+    justify-content: space-evenly;
+    color: var(--firstup);
+    padding: 50px;
+    }
+    .footer ul {
+        float:left;
+        clear:right;
+        font-weight: 200;
+        color: var(--firstup);
+    }
+    .footer li {
+        float:left;
+        clear:left;
+        list-style-type: none;
+        line-height: 35px;
+    }
+    .footer-lists{
+        width: 250px;
+        text-align: center;
+    }
+    .logos{
+        align-self: center;
+        width: 250px;
+        text-align: center;
+        font-family: var(--hfont);
+        font-weight: bold;
+    }
